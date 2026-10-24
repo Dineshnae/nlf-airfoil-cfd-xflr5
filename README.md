@@ -1,48 +1,40 @@
-# CFD Analysis of Natural Laminar Flow Airfoils for Sustainable Aviation
+# Natural-laminar-flow airfoils against NACA 2412
 
-**Comparative aerodynamic analysis: NACA 2412 vs NLF airfoils · XFLR5 · ~44% L/D improvement at cruise**
+**Comparative aerodynamic analysis · NACA 63-215 and NACA 64-210 against NACA 2412 · about 44 % higher L/D at cruise**
 
-📄 [Full Technical One-Pager (PDF)](./nlf_airfoil_cfd_onepager.pdf)  
-🎥 [Demo video](https://youtu.be/YOUR-VIDEO-ID)
+`XFLR5 (XFoil)` · `lifting line theory` · `vortex lattice method`
 
----
+[Technical report and portfolio (PDF)](./Dinesh_Natarajan_Portfolio_NLF_Airfoil_CFD.pdf)
 
 ## Summary
 
-Conducted comparative aerodynamic CFD analysis of conventional NACA 2412 vs Natural Laminar Flow airfoils (NACA 63-215, NACA 64-210) — directly aligned with industry priorities for next-generation low-emission aircraft design.
+A comparison of a conventional NACA 2412 section with two natural-laminar-flow sections at cruise conditions, from 2D viscous polars to a 3D wing with longitudinal stability derivatives. The question was how much drag a laminar-flow section buys at the cruise lift coefficient of a light aircraft, and what it costs in pitching moment and stability.
 
-## Key Results
+## Results
 
 | Metric | Value |
 |---|---|
-| L/D improvement at cruise | **~44%** |
-| Drag reduction at cruise | **~42%** |
-| Reynolds number range tested | 500K → 3M |
-| Angle of attack sweep | −5° to +20° |
-| 3D wing analysis | 12 m span · AR = 8 |
+| L/D at cruise | NACA 63-215: 67.3 against NACA 2412: 46.8, about 44 % higher |
+| Drag at cruise | about 42 % lower |
+| Reynolds numbers | 500 000 to 3 000 000 |
+| Angle-of-attack sweep | −5° to +20° |
+| 3D wing | 12 m span, aspect ratio 8 |
 
-## Tools
+## Method
 
-`XFLR5` · `Lifting Line Theory` · `Vortex Lattice Method`
+1. 2D viscous Type-1 polars across the Reynolds range.
+2. Cl, Cd, Cm, drag polars and L/D extracted for each section.
+3. 3D wing analysis by lifting line theory and the vortex lattice method.
+4. Longitudinal stability derivatives (Cmα, CLα, neutral point) and the static margin.
+5. Validation against published NACA wind-tunnel data.
+6. A report stating assumptions, boundary conditions and design recommendations.
 
-## Methodology
+## Files
 
-1. **2D viscous Type-1 polar analysis** across Reynolds numbers 500K–3M
-2. **Aerodynamic coefficients extracted**: Cl, Cd, Cm, drag polars, L/D ratios
-3. **3D wing analysis** using Lifting Line Theory and Vortex Lattice Method
-4. **Longitudinal stability derivatives extracted**: Cmα, CLα, neutral point — static margin assessment
-5. **Validation** against published NACA wind-tunnel reference data
-6. Structured technical report documenting assumptions, boundary conditions, and design recommendations
+| File | Contents |
+|---|---|
+| `Dinesh_Natarajan_Portfolio_NLF_Airfoil_CFD.pdf` | Full report: polars, 3D wing results, stability derivatives, validation |
 
-## Sustainability angle
+## Author
 
-Targeted **10–15% L/D improvement at cruise** as the design sustainability metric — directly relevant to industry decarbonisation roadmaps and zero-emission aircraft programmes.
-
-## Repository structure
-## Relevance
-
-Demonstrates aerodynamic analysis, CFD post-processing, stability derivative extraction, and sustainable aviation alignment — core skills for Aerodynamics, Flight Physics, Performance, and Conceptual Design roles at Airbus, Boeing, GE Aerospace, and aerospace ESPs.
-
----
-
-📄 [Back to CV](https://github.com/YOUR-USERNAME/YOUR-USERNAME/blob/main/dinesh_cv_general_v3.pdf) · 🔗 [LinkedIn](https://linkedin.com/in/dinesh-natarajan-baaa95206)
+Dinesh Natarajan, aerospace engineer (MSc, University of Salford), Bengaluru. [GitHub profile](https://github.com/Dineshnae) · [LinkedIn](https://linkedin.com/in/dinesh-natarajan-baaa95206)
